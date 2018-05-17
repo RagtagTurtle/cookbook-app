@@ -4,7 +4,6 @@ class Api::RecipesController < ApplicationController
     render 'index.json.jbuilder'
   end
 
-
   def create
     @recipe = Recipe.new(
                           title: params[:title],
